@@ -1,7 +1,18 @@
 import Bee from './Bee'
 
-class ForagerBee {
-  // TODO..
-};
+class ForagerBee extends Bee {
+  constructor() {
+    super();
+    this.age = 10;
+    this.color = 'yellow';
+    this.job = 'find pollen';
+    this.canFly = true;
+    this.treasureChest = [];
+  }
+
+  forage() {
+    this.treasureChest.push('treasure');
+  }
+}
 
 export default ForagerBee;
